@@ -1,0 +1,13 @@
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.Form1.resources
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.Form2.resources
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.Properties.Resources.resources
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.csproj.GenerateResource.Cache
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\bin\Debug\CuentasNet.exe
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\bin\Debug\CuentasNet.pdb
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.exe
+c:\users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.pdb
+C:\Users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.csprojResolveAssemblyReference.cache
+C:\Users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.FormGasto.resources
+C:\Users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.FormIngreso.resources
+C:\Users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.NuevoMes.resources
+C:\Users\p.gsanchez\documents\visual studio 2010\Projects\CuentasNet\CuentasNet\obj\x86\Debug\CuentasNet.FormGastoPrevisto.resources
