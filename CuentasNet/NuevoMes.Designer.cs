@@ -36,11 +36,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNuevoMes = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.txtNuevoAnno = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(97, 130);
+            this.button1.Location = new System.Drawing.Point(97, 169);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -50,7 +52,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(29, 93);
+            this.dateTimePicker1.Location = new System.Drawing.Point(28, 129);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 1;
@@ -74,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 77);
+            this.label2.Location = new System.Drawing.Point(25, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 13);
             this.label2.TabIndex = 4;
@@ -106,11 +108,29 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // txtNuevoAnno
+            // 
+            this.txtNuevoAnno.Location = new System.Drawing.Point(129, 67);
+            this.txtNuevoAnno.Name = "txtNuevoAnno";
+            this.txtNuevoAnno.Size = new System.Drawing.Size(100, 20);
+            this.txtNuevoAnno.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(53, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Nuevo Año";
+            // 
             // NuevoMes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtNuevoAnno);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtNuevoMes);
             this.Controls.Add(this.label3);
@@ -136,5 +156,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNuevoMes;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtNuevoAnno;
+        private System.Windows.Forms.Label label4;
     }
 }

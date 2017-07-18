@@ -36,6 +36,8 @@
             this.txtBoxCantidad = new System.Windows.Forms.TextBox();
             this.textBoxConcepto = new System.Windows.Forms.TextBox();
             this.cmbBoxCategorias = new System.Windows.Forms.ComboBox();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -107,11 +109,33 @@
             this.cmbBoxCategorias.TabIndex = 7;
             this.cmbBoxCategorias.SelectedIndexChanged += new System.EventHandler(this.cmbBoxCategorias_SelectedIndexChanged);
             // 
+            // btnOK
+            // 
+            this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnOK.Location = new System.Drawing.Point(183, 273);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 8;
+            this.btnOK.Text = "Aceptar";
+            this.btnOK.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Location = new System.Drawing.Point(77, 273);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "Calcelar";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
             // FormIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 308);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnOK);
             this.Controls.Add(this.cmbBoxCategorias);
             this.Controls.Add(this.textBoxConcepto);
             this.Controls.Add(this.txtBoxCantidad);
@@ -137,5 +161,7 @@
         private System.Windows.Forms.TextBox txtBoxCantidad;
         private System.Windows.Forms.TextBox textBoxConcepto;
         private System.Windows.Forms.ComboBox cmbBoxCategorias;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

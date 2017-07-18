@@ -43,6 +43,7 @@
             this.btnNuevoIngreso = new System.Windows.Forms.Button();
             this.btnEdtIngreso = new System.Windows.Forms.Button();
             this.tabPrev = new System.Windows.Forms.TabPage();
+            this.textMsgPrevisiones = new System.Windows.Forms.Label();
             this.btnBorrarPrev = new System.Windows.Forms.Button();
             this.listPrev = new System.Windows.Forms.ListView();
             this.btnEditPrev = new System.Windows.Forms.Button();
@@ -64,9 +65,12 @@
             this.txtBoxTotalPrev = new System.Windows.Forms.TextBox();
             this.listResumen = new System.Windows.Forms.ListView();
             this.tabMeses = new System.Windows.Forms.TabPage();
+            this.listFormasPago = new System.Windows.Forms.ListView();
+            this.btnBorrarFormaPago = new System.Windows.Forms.Button();
+            this.btnEditFormaPago = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtBoxFormaPago = new System.Windows.Forms.TextBox();
             this.btnAddFormaPago = new System.Windows.Forms.Button();
-            this.listFormasPago = new System.Windows.Forms.ListView();
             this.button2 = new System.Windows.Forms.Button();
             this.cmbBoxMes = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
@@ -230,6 +234,7 @@
             // 
             // tabPrev
             // 
+            this.tabPrev.Controls.Add(this.textMsgPrevisiones);
             this.tabPrev.Controls.Add(this.btnBorrarPrev);
             this.tabPrev.Controls.Add(this.listPrev);
             this.tabPrev.Controls.Add(this.btnEditPrev);
@@ -241,6 +246,14 @@
             this.tabPrev.TabIndex = 1;
             this.tabPrev.Text = "Prevision";
             this.tabPrev.UseVisualStyleBackColor = true;
+            // 
+            // textMsgPrevisiones
+            // 
+            this.textMsgPrevisiones.AutoSize = true;
+            this.textMsgPrevisiones.Location = new System.Drawing.Point(361, 15);
+            this.textMsgPrevisiones.Name = "textMsgPrevisiones";
+            this.textMsgPrevisiones.Size = new System.Drawing.Size(0, 13);
+            this.textMsgPrevisiones.TabIndex = 21;
             // 
             // btnBorrarPrev
             // 
@@ -356,7 +369,7 @@
             // cmbEtiqueta1
             // 
             this.cmbEtiqueta1.FormattingEnabled = true;
-            this.cmbEtiqueta1.Location = new System.Drawing.Point(460, 42);
+            this.cmbEtiqueta1.Location = new System.Drawing.Point(438, 21);
             this.cmbEtiqueta1.Name = "cmbEtiqueta1";
             this.cmbEtiqueta1.Size = new System.Drawing.Size(121, 21);
             this.cmbEtiqueta1.TabIndex = 26;
@@ -364,16 +377,16 @@
             // 
             // txtBoxTotalEtiqueta
             // 
-            this.txtBoxTotalEtiqueta.Location = new System.Drawing.Point(524, 184);
+            this.txtBoxTotalEtiqueta.Location = new System.Drawing.Point(593, 151);
             this.txtBoxTotalEtiqueta.Name = "txtBoxTotalEtiqueta";
             this.txtBoxTotalEtiqueta.Size = new System.Drawing.Size(57, 20);
             this.txtBoxTotalEtiqueta.TabIndex = 25;
             // 
             // listGastosEtiqueta
             // 
-            this.listGastosEtiqueta.Location = new System.Drawing.Point(438, 69);
+            this.listGastosEtiqueta.Location = new System.Drawing.Point(438, 48);
             this.listGastosEtiqueta.Name = "listGastosEtiqueta";
-            this.listGastosEtiqueta.Size = new System.Drawing.Size(143, 97);
+            this.listGastosEtiqueta.Size = new System.Drawing.Size(212, 97);
             this.listGastosEtiqueta.TabIndex = 24;
             this.listGastosEtiqueta.UseCompatibleStateImageBehavior = false;
             this.listGastosEtiqueta.View = System.Windows.Forms.View.Details;
@@ -410,9 +423,9 @@
             // 
             // listGastosXMetodo
             // 
-            this.listGastosXMetodo.Location = new System.Drawing.Point(670, 21);
+            this.listGastosXMetodo.Location = new System.Drawing.Point(438, 218);
             this.listGastosXMetodo.Name = "listGastosXMetodo";
-            this.listGastosXMetodo.Size = new System.Drawing.Size(121, 97);
+            this.listGastosXMetodo.Size = new System.Drawing.Size(212, 97);
             this.listGastosXMetodo.TabIndex = 19;
             this.listGastosXMetodo.UseCompatibleStateImageBehavior = false;
             this.listGastosXMetodo.View = System.Windows.Forms.View.Details;
@@ -435,10 +448,12 @@
             // 
             // tabMeses
             // 
+            this.tabMeses.Controls.Add(this.listFormasPago);
+            this.tabMeses.Controls.Add(this.btnBorrarFormaPago);
+            this.tabMeses.Controls.Add(this.btnEditFormaPago);
+            this.tabMeses.Controls.Add(this.label3);
             this.tabMeses.Controls.Add(this.txtBoxFormaPago);
             this.tabMeses.Controls.Add(this.btnAddFormaPago);
-            this.tabMeses.Controls.Add(this.listFormasPago);
-            this.tabMeses.Controls.Add(this.button2);
             this.tabMeses.Location = new System.Drawing.Point(4, 22);
             this.tabMeses.Name = "tabMeses";
             this.tabMeses.Size = new System.Drawing.Size(807, 362);
@@ -446,16 +461,55 @@
             this.tabMeses.Text = "Mes Actual";
             this.tabMeses.UseVisualStyleBackColor = true;
             // 
+            // listFormasPago
+            // 
+            this.listFormasPago.Location = new System.Drawing.Point(12, 47);
+            this.listFormasPago.Name = "listFormasPago";
+            this.listFormasPago.Size = new System.Drawing.Size(162, 116);
+            this.listFormasPago.TabIndex = 7;
+            this.listFormasPago.UseCompatibleStateImageBehavior = false;
+            this.listFormasPago.View = System.Windows.Forms.View.Details;
+            this.listFormasPago.SelectedIndexChanged += new System.EventHandler(this.listFormasPago_SelectedIndexChanged);
+            // 
+            // btnBorrarFormaPago
+            // 
+            this.btnBorrarFormaPago.Location = new System.Drawing.Point(112, 211);
+            this.btnBorrarFormaPago.Name = "btnBorrarFormaPago";
+            this.btnBorrarFormaPago.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrarFormaPago.TabIndex = 6;
+            this.btnBorrarFormaPago.Text = "Borrar";
+            this.btnBorrarFormaPago.UseVisualStyleBackColor = true;
+            this.btnBorrarFormaPago.Click += new System.EventHandler(this.btnBorrarFormaPago_Click);
+            // 
+            // btnEditFormaPago
+            // 
+            this.btnEditFormaPago.Location = new System.Drawing.Point(12, 211);
+            this.btnEditFormaPago.Name = "btnEditFormaPago";
+            this.btnEditFormaPago.Size = new System.Drawing.Size(75, 23);
+            this.btnEditFormaPago.TabIndex = 5;
+            this.btnEditFormaPago.Text = "Editar";
+            this.btnEditFormaPago.UseVisualStyleBackColor = true;
+            this.btnEditFormaPago.Click += new System.EventHandler(this.btnEditFormaPago_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Metodos de Pago";
+            // 
             // txtBoxFormaPago
             // 
-            this.txtBoxFormaPago.Location = new System.Drawing.Point(112, 82);
+            this.txtBoxFormaPago.Location = new System.Drawing.Point(112, 172);
             this.txtBoxFormaPago.Name = "txtBoxFormaPago";
             this.txtBoxFormaPago.Size = new System.Drawing.Size(100, 20);
             this.txtBoxFormaPago.TabIndex = 3;
             // 
             // btnAddFormaPago
             // 
-            this.btnAddFormaPago.Location = new System.Drawing.Point(12, 79);
+            this.btnAddFormaPago.Location = new System.Drawing.Point(12, 169);
             this.btnAddFormaPago.Name = "btnAddFormaPago";
             this.btnAddFormaPago.Size = new System.Drawing.Size(75, 23);
             this.btnAddFormaPago.TabIndex = 2;
@@ -463,18 +517,9 @@
             this.btnAddFormaPago.UseVisualStyleBackColor = true;
             this.btnAddFormaPago.Click += new System.EventHandler(this.btnAddFormaPago_Click);
             // 
-            // listFormasPago
-            // 
-            this.listFormasPago.Location = new System.Drawing.Point(12, 14);
-            this.listFormasPago.Name = "listFormasPago";
-            this.listFormasPago.Size = new System.Drawing.Size(200, 59);
-            this.listFormasPago.TabIndex = 1;
-            this.listFormasPago.UseCompatibleStateImageBehavior = false;
-            this.listFormasPago.View = System.Windows.Forms.View.Details;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(668, 35);
+            this.button2.Location = new System.Drawing.Point(752, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 0;
@@ -496,6 +541,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 409);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.cmbBoxMes);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
@@ -504,6 +550,7 @@
             this.tabGastos.ResumeLayout(false);
             this.tabGastos.PerformLayout();
             this.tabPrev.ResumeLayout(false);
+            this.tabPrev.PerformLayout();
             this.tabCat.ResumeLayout(false);
             this.tabResumen.ResumeLayout(false);
             this.tabResumen.PerformLayout();
@@ -545,7 +592,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBoxDiferencia;
         private System.Windows.Forms.Button btnAddFormaPago;
-        private System.Windows.Forms.ListView listFormasPago;
         private System.Windows.Forms.TextBox txtBoxFormaPago;
         private System.Windows.Forms.TextBox txtBoxTotalPrev;
         private System.Windows.Forms.ListView listGastosXMetodo;
@@ -556,6 +602,11 @@
         private System.Windows.Forms.ComboBox cmbEtiqueta1;
         private System.Windows.Forms.TextBox txtBoxTotalEtiqueta;
         private System.Windows.Forms.ListView listGastosEtiqueta;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBorrarFormaPago;
+        private System.Windows.Forms.Button btnEditFormaPago;
+        private System.Windows.Forms.ListView listFormasPago;
+        private System.Windows.Forms.Label textMsgPrevisiones;
     }
 }
 

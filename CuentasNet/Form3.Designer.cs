@@ -46,10 +46,12 @@
             // 
             // txtBoxCantidad
             // 
+            this.txtBoxCantidad.ForeColor = System.Drawing.Color.Red;
             this.txtBoxCantidad.Location = new System.Drawing.Point(144, 54);
             this.txtBoxCantidad.Name = "txtBoxCantidad";
             this.txtBoxCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtBoxCantidad.TabIndex = 0;
+            this.txtBoxCantidad.Text = "-";
             this.txtBoxCantidad.TextChanged += new System.EventHandler(this.txtBoxCantidad_TextChanged);
             // 
             // label1
@@ -115,7 +117,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOk.Location = new System.Drawing.Point(200, 229);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);

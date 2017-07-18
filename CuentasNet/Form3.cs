@@ -133,7 +133,11 @@ namespace CuentasNet
 
         private void txtBoxCantidad_TextChanged(object sender, EventArgs e)
         {
-            gasto.Cantidad = Convert.ToSingle(txtBoxCantidad.Text);
+            if (txtBoxCantidad.Text[0] == '-')
+                txtBoxCantidad.ForeColor = Color.Red;
+            else
+                txtBoxCantidad.ForeColor = Color.Green;
+            //gasto.Cantidad = Convert.ToSingle(txtBoxCantidad.Text);
         }
 
         private void textBoxConcepto_TextChanged(object sender, EventArgs e)

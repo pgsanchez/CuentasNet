@@ -23,6 +23,14 @@ namespace CuentasNet
             return fechaFin.Year.ToString() + "/" + fechaFin.Month.ToString() + "/" + fechaFin.Day.ToString();
         }
 
+        public String GetMesFromNumero(int numMes)
+        {
+            if (numMes == 0)
+                return meses[numMes];
+            else
+                return meses[numMes - 1];
+        }
+
         public Mes()
         {
             nombre = "";
@@ -91,6 +99,5 @@ namespace CuentasNet
             }
             return valor;
         }
-
     }
 }
